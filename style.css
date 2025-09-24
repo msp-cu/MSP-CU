@@ -725,3 +725,15 @@ input:focus {
 #joinForm .btn:hover {
   transform: translateY(-3px);
 }
+
+/* Example mobile nav styles */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        /* other mobile styles */
+    }
+    .nav.open {
+        display: block;
+        /* other styles for open nav */
+    }
+}

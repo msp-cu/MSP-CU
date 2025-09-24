@@ -7,6 +7,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const menuBtn = document.querySelector('.menu-btn');
+    const nav = document.getElementById('main-nav');
+
+    menuBtn.addEventListener('click', function () {
+        nav.classList.toggle('open');
+        // Update aria-expanded for accessibility
+        const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+        menuBtn.setAttribute('aria-expanded', !expanded);
+    });
+});
+
 function animateCounters() {
     const counters = document.querySelectorAll('.counter');
 
