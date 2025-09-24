@@ -751,3 +751,11 @@ input:focus {
     margin-top: auto; /* Pushes button to bottom */
     align-self: flex-start; /* Or center, as needed */
 }
+
+.project-card img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}

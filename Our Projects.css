@@ -1,155 +1,188 @@
 .projects {
-  text-align: center;
-  padding: 80px 20px;
+    text-align: center;
+    padding: 80px 20px;
 }
 
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* smaller cards */
-  gap: 25px;
-  margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    /* smaller cards */
+    gap: 25px;
+    margin-top: 40px;
 }
 
+
 /* Project Cards */
+
 .project-card {
-  background: var(--glass);
-  padding: 20px;
-  border-radius: var(--card-radius);
-  box-shadow: 0 8px 25px rgba(2, 6, 23, 0.5);
-  transition: transform 0.3s ease;
-  text-align: center;
+    background: var(--glass);
+    padding: 20px;
+    border-radius: var(--card-radius);
+    box-shadow: 0 8px 25px rgba(2, 6, 23, 0.5);
+    transition: transform 0.3s ease;
+    text-align: center;
 }
 
 .project-card:hover {
-  transform: translateY(-6px);
+    transform: translateY(-6px);
 }
+
 
 /* Uniform Images */
+
 .project-card img {
-  width: 100%;
-  height: 160px;           /* fixed height */
-  object-fit:contain;       /* crops + keeps proportions */
-  border-radius: var(--card-radius);
-  margin-bottom: 15px;
+    width: 100%;
+    height: 160px;
+    /* fixed height */
+    object-fit: contain;
+    /* crops + keeps proportions */
+    border-radius: var(--card-radius);
+    margin-bottom: 15px;
 }
+
 
 /* Titles */
+
 .project-card h3 {
-  margin: 10px 0;
-  font-size: 1.3rem;
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  color: transparent;
+    margin: 10px 0;
+    font-size: 1.3rem;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
+
 /* Description */
+
 .project-card p {
-  font-size: 0.95rem;
-  color: var(--muted);
-  min-height: 60px; /* keeps consistent card size even with short text */
+    font-size: 0.95rem;
+    color: var(--muted);
+    min-height: 60px;
+    /* keeps consistent card size even with short text */
 }
 
 .project-card img {
-  width: 50%;
-  border-radius: var(--card-radius);
-  margin-bottom: 15px;
+    width: 50%;
+    border-radius: var(--card-radius);
+    margin-bottom: 15px;
 }
 
 .project-card h3 {
-  margin: 10px 0;
-  font-size: 1.5rem;
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  color: white;
+    margin: 10px 0;
+    font-size: 1.5rem;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    color: white;
 }
 
 .project-card p {
-  color: var(--muted);
-  font-size: 1rem;
+    color: var(--muted);
+    font-size: 1rem;
 }
 
 .projects-cta {
-  margin-top: 60px;
+    margin-top: 60px;
 }
 
 .projects-cta .btn {
-  display: inline-block;
-  padding: 12px 28px;
-  background: var(--gradient);
-  color: #fff;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: 600;
+    display: inline-block;
+    padding: 12px 28px;
+    background: var(--gradient);
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
 }
+
+
 /* Read More buttons inside project cards */
+
 .project-card .btn-small {
-  display: inline-block;
-  padding: 8px 20px;
-  background: var(--gradient);
-  color:white;
-  border: none;
-  border-radius: 50px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    padding: 8px 20px;
+    background: var(--gradient);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card .btn-small:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
 }
+
 
 /* Modal Base */
+
 .modal {
-  display: none; 
-  position: fixed;
-  z-index: 1000;
-  padding-top: 80px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background: rgba(0, 0, 0, 0.85);
-  backdrop-filter: blur(4px);
-  animation: fadeIn 0.3s ease;
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 80px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(4px);
+    animation: fadeIn 0.3s ease;
 }
+
 
 /* Modal Content */
+
 .modal-content {
-  background: #0f172a;
-  margin: auto;
-  padding: 30px;
-  border-radius: 12px;
-  width: 80%;
-  max-width: 700px;
-  color: #fff;
-  animation: slideUp 0.4s ease;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    background: #0f172a;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 700px;
+    color: #fff;
+    animation: slideUp 0.4s ease;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
 }
 
+
 /* Close Button */
+
 .close {
-  color: #fff;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .close:hover {
-  color: #38bdf8;
+    color: #38bdf8;
 }
 
+
 /* Animations */
+
 @keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes slideUp {
-  from {transform: translateY(30px); opacity: 0;}
-  to {transform: translateY(0); opacity: 1;}
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
