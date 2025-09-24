@@ -761,11 +761,33 @@ input:focus {
 @media (max-width: 768px) {
     .nav {
         display: none;
-        /* other mobile styles */
+        flex-direction: column;
+        background: #fff; /* or your nav background */
+        position: absolute;
+        top: 100%; /* below header */
+        left: 0;
+        width: 100%;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        padding: 1em 0;
     }
     .nav.open {
+        display: flex;
+    }
+    .nav ul {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    .nav li {
+        width: 100%;
+        text-align: center;
+        margin: 0.5em 0;
+    }
+    .nav a {
         display: block;
-        /* other styles for open nav */
+        padding: 1em;
+        width: 100%;
     }
 }
 
