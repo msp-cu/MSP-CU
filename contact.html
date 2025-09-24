@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MSPCU — Contact & Join</title>
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="brand" href="index.html">MSPCU</a>
+
+      <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+
+      <nav class="nav" id="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="Our Projects.html">Our Projects</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html" class="cta active">Join</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contact Intro -->
+  <section class="section">
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <p>We’d love to hear from you! Whether you’re interested in joining MSP CU, collaborating on events, 
+         or just learning more about our community — this is the place.</p>
+    </div>
+  </section>
+
+  <!-- Google Form -->
+ <section class="section">
+  <div class="container">
+    <h2>Join MSP CU</h2>
+    <p class="section-subtitle">Fill out the form below to apply and become part of our community.</p>
+
+    <form class="contact-form" id="joinForm">
+      <!-- Name -->
+      <input type="text" name="name" placeholder="Your Full Name" required>
+
+      <!-- Email -->
+      <input type="email" name="email" placeholder="Your Email" required>
+
+      <!-- Phone -->
+      <input type="text" name="phone" placeholder="Your Phone Number" required>
+
+      <!-- Faculty / Department -->
+      <input type="text" name="faculty" placeholder="Faculty / Department" required>
+
+      <!-- Year of Study -->
+      <select name="year" required>
+        <option value="">Select Year of Study</option>
+        <option value="1st Year">1st Year</option>
+        <option value="2nd Year">2nd Year</option>
+        <option value="3rd Year">3rd Year</option>
+        <option value="4th Year">4th Year</option>
+      </select>
+
+      <!-- Why Join -->
+      <textarea name="reason" rows="5" placeholder="Why do you want to join MSP CU?" required></textarea>
+
+      <!-- Submit -->
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+</section>
+
+
+
+  <!-- Contact Info -->
+  <section class="section">
+    <div class="container contact-info">
+      <h3>Contact Information</h3>
+      <ul>
+        <li><i class="fas fa-envelope"></i> mspcu@example.com</li>
+        <li><i class="fas fa-phone"></i> +20 100 123 4567</li>
+        <li><i class="fas fa-map-marker-alt"></i> Cairo University, Giza, Egypt</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="section">
+    <div class="container">
+      <h3>Find Us</h3>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.0249500904096!2d31.20575341511728!3d30.027531581887894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145840f62de02b59%3A0xb67a6a4d7d3a3e44!2sCairo%20University!5e0!3m2!1sen!2seg!4v1698249272214!5m2!1sen!2seg" 
+        width="100%" 
+        height="400" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+  <div class="container">
+    <h3>Frequently Asked Questions</h3>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        Who can join MSP CU? <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        Any student at Cairo University who is passionate about technology and community growth.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        Do I need prior experience? <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        No, we welcome beginners as well as experienced students.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        How do I stay updated? <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        Follow us on our social media channels or subscribe to our newsletter.
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-row">
+      <!-- Brand -->
+      <div class="footer-brand">
+        <h3>MSP CU</h3>
+        <p>Empowering students through technology, learning, and collaboration.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Impact</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="footer-newsletter">
+        <h4>Stay Updated</h4>
+        <p>Subscribe to get our latest updates and announcements.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+
+      <!-- Social -->
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="icons">
+          <a href="https://www.facebook.com/MSPCU"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/mspcu2"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/msp-cairo"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+      © 2025 MSP CU. All Rights Reserved.
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+  // FAQ Toggle
+document.querySelectorAll('.faq-question').forEach(item => {
+  item.addEventListener('click', () => {
+    const parent = item.parentNode;
+    parent.classList.toggle('active');
+  });
+});
+</script>
+</body>
+</html>

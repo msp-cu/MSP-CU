@@ -1,0 +1,154 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>MSPCU — AI & Tech (Prototype)</title>
+
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="Our Projects.css" />
+    </head>
+    <body>
+        <!-- NAV -->
+        <header class="site-header">
+            <div class="container nav-row">
+                <a class="brand" href="index.html">MSPCU</a>
+
+                <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+
+                <nav class="nav" id="main-nav">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="Our Projects.html">Our Projects</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html" class="cta">Join</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+<section class="projects">
+  <h2 class="section-title">Our Projects</h2>
+  <p class="section-subtitle">A glimpse into what we’ve built and achieved together.</p>
+
+  <div class="projects-grid">
+    <!-- Project 1 -->
+    <div class="project-card">
+      <img src="assets/Locavista.png" alt="Locavista">
+      <h3>Locavista</h3>
+      <p>Hands-on sessions where students learned the basics of artificial intelligence.</p>
+      <button class="btn-small" onclick="openModal('modal1')">Read More</button>
+    </div>
+
+    <!-- Modal 1 -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h2>Locavista</h2>
+        <p>From heart to Art
+Our project is a website that gathers handmade sellers and learners in one place. It helps creators showcase their products, customers find unique items, and offers courses to support people who want to start or grow in the handmade field.</p>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <img src="assets/Career Z.png" alt="Career Z">
+      <h3>Career Z</h3>
+      <p>A 48-hour challenge bringing students together to solve real-world problems with technology.</p>
+      <button class="btn-small" onclick="openModal('modal2')">Read More</button>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h2>Career Z</h2>
+        <p>Full details about Career Z hackathon, goals, achievements, and student impact.</p>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+      <img src="assets/Renturn.png" alt="Renturn">
+      <h3>Renturn</h3>
+      <p>Exploring innovative solutions in technology and real applications for students.</p>
+      <button class="btn-small" onclick="openModal('modal3')">Read More</button>
+    </div>
+
+    <!-- Modal 3 -->
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <h2>Renturn</h2>
+        <p>Deep dive into Renturn project, its phases, achievements, and future plans.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="projects-cta">
+    <p>Want to be part of our next project?</p>
+    <a href="contact.html" class="btn">Join MSP CU</a>
+  </div>
+</section>
+
+
+    </body>
+
+        <footer class="site-footer">
+            <div class="footer-row">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <h3>MSP CU</h3>
+                    <p>Empowering students through technology, learning, and collaboration.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Impact</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to get our latest updates and announcements.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+
+                <!-- Social -->
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom -->
+            <div class="footer-bottom">
+                © 2025 MSP CU. All Rights Reserved.
+            </div>
+        </footer>
+
+
+
+        <script src="main.js"></script>
+    </body>
+
+    </html>

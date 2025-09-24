@@ -1,0 +1,34 @@
+.join-us {
+    text-align: center;
+    padding: 80px 20px;
+    background: var(--glass);
+    border-radius: var(--card-radius);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    margin: 60px auto;
+    max-width: 600px;
+}
+
+.join-us h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.join-us p {
+    color: var(--muted);
+    margin-bottom: 30px;
+}
+
+.qr-box img {
+    max-width: 220px;
+    border: 6px solid #fff;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.qr-box img:hover {
+    transform: scale(1.05);
+}
