@@ -774,7 +774,7 @@ input:focus {
     .nav {
         display: none;
         flex-direction: column;
-        background: transparent;
+        background: var(--glass);
         /* or your nav background */
         position: absolute;
         top: 100%;
