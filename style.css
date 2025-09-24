@@ -630,6 +630,37 @@ body {
     }
 }
 
+/* Responsive grid for project cards */
+@media (max-width: 768px) {
+    .feature-grid,
+    .impact-grid,
+    .collab-grid,
+    .project-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+    }
+    .project-card,
+    .feature.card {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .site-header .nav {
+        width: 100%;
+    }
+    .container {
+        padding: 0 1em;
+    }
+    h1, h2, h3 {
+        font-size: 1.2em;
+    }
+    .btn {
+        width: 100%;
+        font-size: 1em;
+        padding: 0.75em 0;
+    }
+}
+
 
 /* small interactive focus outlines for accessibility */
 
