@@ -823,6 +823,25 @@ input:focus {
         padding: 1em;
         width: 100%;
     }
+    .features {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .feature-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .feature.card {
+        width: 90%;
+        margin: 0.5em 0;
+        text-align: center;
+    }
 }
 
 .project-card {
