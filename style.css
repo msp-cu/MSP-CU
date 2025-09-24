@@ -630,7 +630,9 @@ body {
     }
 }
 
+
 /* Responsive grid for project cards */
+
 @media (max-width: 768px) {
     .feature-grid,
     .impact-grid,
@@ -651,7 +653,9 @@ body {
     .container {
         padding: 0 1em;
     }
-    h1, h2, h3 {
+    h1,
+    h2,
+    h3 {
         font-size: 1.2em;
     }
     .btn {
@@ -670,104 +674,114 @@ input:focus {
     outline: 3px solid rgba(56, 189, 248, 0.12);
     outline-offset: 3px
 }
+
+
 /* FAQ Accordion */
+
 .faq-item {
-  background: var(--glass);
-  margin-bottom: 12px;
-  border-radius: var(--card-radius);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  overflow: hidden;
+    background: var(--glass);
+    margin-bottom: 12px;
+    border-radius: var(--card-radius);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
 }
 
 .faq-question {
-  padding: 15px 20px;
-  cursor: pointer;
-  font-weight: 600;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .faq-question i {
-  transition: transform 0.3s;
+    transition: transform 0.3s;
 }
 
 .faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease;
-  padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding: 0 20px;
 }
 
 .faq-item.active .faq-answer {
-  max-height: 200px;
-  padding: 15px 20px;
+    max-height: 200px;
+    padding: 15px 20px;
 }
 
 .faq-item.active .faq-question i {
-  transform: rotate(180deg);
+    transform: rotate(180deg);
 }
+
+
 /* Custom Join Form */
+
 #joinForm {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 600px;
-  margin: 30px auto;
-  background: var(--glass);
-  padding: 25px;
-  border-radius: var(--card-radius);
-  box-shadow: 0 8px 25px rgba(2, 6, 23, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 30px auto;
+    background: var(--glass);
+    padding: 25px;
+    border-radius: var(--card-radius);
+    box-shadow: 0 8px 25px rgba(2, 6, 23, 0.5);
 }
 
 #joinForm input,
 #joinForm select,
 #joinForm textarea {
-  padding: 12px;
-  border: none;
-  border-radius: 8px;
-  background: #0f172a;
-  color: #fff;
-  font-size: 1rem;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #0f172a;
+    color: #fff;
+    font-size: 1rem;
 }
 
 #joinForm input::placeholder,
 #joinForm textarea::placeholder {
-  color: #94a3b8;
+    color: #94a3b8;
 }
 
 #joinForm select {
-  background: #0f172a;
-  color: #fff;
+    background: #0f172a;
+    color: #fff;
 }
 
 #joinForm .btn {
-  align-self: flex-start;
-  padding: 12px 28px;
-  background: var(--gradient);
-  color: #fff;
-  border-radius: 50px;
-  font-weight: 600;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s;
+    align-self: flex-start;
+    padding: 12px 28px;
+    background: var(--gradient);
+    color: #fff;
+    border-radius: 50px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
 }
 
 #joinForm .btn:hover {
-  transform: translateY(-3px);
+    transform: translateY(-3px);
 }
 
+
 /* Example mobile nav styles */
+
 @media (max-width: 768px) {
     .nav {
         display: none;
         flex-direction: column;
-        background: #fff; /* or your nav background */
+        background: transparent;
+        /* or your nav background */
         position: absolute;
-        top: 100%; /* below header */
+        top: 100%;
+        /* below header */
         left: 0;
         width: 100%;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         padding: 1em 0;
     }
     .nav.open {
@@ -795,14 +809,17 @@ input:focus {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%; /* Ensures all cards are equal height */
+    height: 100%;
+    /* Ensures all cards are equal height */
     padding: 1em;
     box-sizing: border-box;
 }
 
 .btn.readmore {
-    margin-top: auto; /* Pushes button to bottom */
-    align-self: flex-start; /* Or center, as needed */
+    margin-top: auto;
+    /* Pushes button to bottom */
+    align-self: flex-start;
+    /* Or center, as needed */
 }
 
 .project-card img {
