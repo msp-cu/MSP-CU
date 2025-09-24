@@ -737,3 +737,17 @@ input:focus {
         /* other styles for open nav */
     }
 }
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Ensures all cards are equal height */
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.btn.readmore {
+    margin-top: auto; /* Pushes button to bottom */
+    align-self: flex-start; /* Or center, as needed */
+}
